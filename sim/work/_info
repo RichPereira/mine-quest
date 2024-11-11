@@ -1,0 +1,143 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/riche/OneDrive/Attachments/University Assignments/ECE241-V2/final_project/sim
+vdisplay_time
+Z1 !s110 1731338882
+!i10b 1
+!s100 RV7cFG5=SF9Il68]1^OW]2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IU=62B^4JcBfH>KOQBQ1mi2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1731338126
+Z5 8../mine_quest.v
+Z6 F../mine_quest.v
+!i122 1
+L0 65 23
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1731338882.000000
+!s107 ../top.v|../mine_quest.v|
+Z9 !s90 ../mine_quest.v|../top.v|
+!i113 1
+Z10 tCvgOpt 0
+vgame_timer
+R1
+!i10b 1
+!s100 O8NEIhW9ebO]G=4I9Z6=61
+R2
+IjEO=^Q6NklD<1[7Bm[9Yj2
+R3
+R0
+R4
+R5
+R6
+!i122 1
+L0 16 48
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 ../top.v|../mine_quest.v|
+R9
+!i113 1
+R10
+vhex_decoder
+R1
+!i10b 1
+!s100 _VFS]gE>oYcOLJkENGZ3Y0
+R2
+IRaKnMm7R]c9zIQDaHL]i61
+R3
+R0
+R4
+R5
+R6
+!i122 1
+L0 89 21
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vmain
+R1
+!i10b 1
+!s100 Fe7<`@=K`1=mP43]dmmiK3
+R2
+ImO;W2Jle?S^APgREV:4<k2
+R3
+R0
+R4
+R5
+R6
+!i122 1
+L0 1 11
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+vtb
+R1
+!i10b 1
+!s100 lhe2d[7iVCLDhK5z<^zUj2
+R2
+I7DAIe_g?f>PB`TOI`^B]g1
+R3
+R0
+w1610675072
+8../tb/tb.v
+F../tb/tb.v
+!i122 0
+L0 9 44
+R7
+r1
+!s85 0
+31
+R8
+!s107 ../tb/tb.v|
+!s90 ../tb/tb.v|
+!i113 1
+R10
+vtop
+R1
+!i10b 1
+!s100 X7:f`IYoa8gFEL4^;hHNJ2
+R2
+IfR0eP6>Io8ZKLITY6NXAb1
+R3
+R0
+w1731338062
+8../top.v
+F../top.v
+!i122 1
+L0 4 18
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
