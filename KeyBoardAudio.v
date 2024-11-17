@@ -18,14 +18,6 @@ AUD_ADCDAT,
 	AUD_XCK,
 	AUD_DACDAT,
 	FPGA_I2C_SCLK,
-	HEX0,
-	HEX1,
-	HEX2,
-	HEX3, 
-	HEX4,
-	HEX5, 
-	HEX6, 
-	HEX7,
 	LEDR
 );
 
@@ -48,15 +40,6 @@ output	AUD_DACDAT;
 output	FPGA_I2C_SCLK;
 output [8:0] LEDR;
 
-output	wire	[6:0]	HEX0;
-output	wire	[6:0]	HEX1;
-output	wire	[6:0]	HEX2;
-output	wire	[6:0]	HEX3;
-output	wire	[6:0]	HEX4;
-output	wire	[6:0]	HEX5;
-output	wire	[6:0]	HEX6;
-output	wire	[6:0]	HEX7;
-
 
 
 wire[7:0] last_data;
@@ -72,14 +55,6 @@ PS2 k0(// Inputs
 	.PS2_DAT(PS2_DAT),
 	
 	// Outputs
-	.HEX0(HEX0),
-	.HEX1(HEX1),
-	.HEX2(HEX2),
-	.HEX3(HEX3),
-	.HEX4(HEX4),
-	.HEX5(HEX5),
-	.HEX6(HEX6),
-	.HEX7(HEX7),
 	.last_data_received(last_data)
 	);
 
