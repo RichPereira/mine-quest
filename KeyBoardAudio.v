@@ -18,7 +18,7 @@ AUD_ADCDAT,
 	AUD_XCK,
 	AUD_DACDAT,
 	FPGA_I2C_SCLK,
-	LEDR
+	keyboardinput.
 );
 
 input CLOCK_50;
@@ -38,11 +38,12 @@ inout	PS2_DAT;
 output	AUD_XCK;
 output	AUD_DACDAT;
 output	FPGA_I2C_SCLK;
-output [8:0] LEDR;
+output [7:0] keyboardinput;
 
 
 
 wire[7:0] last_data;
+wire key_pressed;
 
 
 PS2 k0(// Inputs
@@ -56,6 +57,7 @@ PS2 k0(// Inputs
 	
 	// Outputs
 	.last_data_received(last_data)
+	.key_pressed(key_pressed)
 	);
 
 MainAudio k1(// Inputs
@@ -63,6 +65,7 @@ MainAudio k1(// Inputs
 	.KEY(KEY),
 	.x0(last_data[7:4]),
 	.x1(last_data[3:0]),
+	.enable(key_pressed),
 	.AUD_ADCDAT(AUD_ADCDAT),
 
 	// Bidirectionals
@@ -77,9 +80,8 @@ MainAudio k1(// Inputs
 	.FPGA_I2C_SCLK(FPGA_I2C_SCLK)
 	);
 
-	 assign LEDR[3:0]=last_data[3:0];
-	 assign LEDR[7:4]=last_data[7:4];
-    
+	 
+    assign keyboardinput = last_data;
 	 
 endmodule
 
